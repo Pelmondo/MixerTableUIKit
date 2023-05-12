@@ -34,7 +34,9 @@ class ViewController: UIViewController {
         view.tintColor = .systemMint
         title = "Task 4"
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Shuffle", style: .plain, target: self, action: #selector(shuffleCells))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Shuffle", style: .plain, target: self, action: #selector(shuffleCells)
+        )
         navigationItem.rightBarButtonItem?.tintColor = .systemMint
 
         tableView.delegate = self
